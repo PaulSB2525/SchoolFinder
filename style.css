@@ -1,0 +1,61 @@
+body{
+    background-color: #f8f9fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.input-container input,
+.input-container select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+.results-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 40px;
+}
+
+@media (min-width: 1024px) {
+    .results-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.card .badge {
+    display: inline-block;
+    padding: 5px;
+    background-color: #e2f0ff;
+    color: #007bff;
+    border-radius: 5px;
+    font-weight: bold;
+}

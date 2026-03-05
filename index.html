@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalisco School Finder</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <header><h1>Jalisco School Finder</h1></header>
+    <div class="formulario">
+        <div class="input-container">
+            <input type="text" id="school-name" name="school_name" placeholder="Search by Name">
+        </div>
+        <div class="input-container">
+            <select id="municipios" name="municipios" required>
+                <option value="">TODOS LOS MUNICIPIOS</option>
+            </select>
+        </div>
+        <div class="input-container">
+            <select id="nivel" name="nivel" required>
+                <option value="">TODOS LOS NIVELES</option>
+            </select>
+        </div>
+    </div>
+    <div class = "results-container">
+    </div>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
